@@ -1,0 +1,57 @@
+{
+  "nav": {
+    "home": "Beranda",
+    "about": "Tentang",
+    "services": "Layanan",
+    "team": "Tim",
+    "insights": "Wawasan",
+    "contact": "Kontak",
+    "consultation": "Konsultasi",
+    "freeConsultation": "Konsultasi Gratis"
+  },
+  "home": {
+    "heroLabel": "Soaloan Tua Nababan & Partners",
+    "heroTitle1": "Menegakkan Hukum",
+    "heroTitle2": "Kebenaran & Keadilan",
+    "heroSubtitle": "Firma hukum Jakarta dengan layanan penuh yang memberikan nasihat hukum strategis di bidang kepailitan, litigasi, korporasi, dan keuangan.",
+    "aboutLabel": "Tentang Firma Kami",
+    "aboutTitle": "Mitra Hukum Terpercaya Sejak 2018",
+    "aboutText": "Didirikan oleh {founder}, Soaloan Tua Nababan & Partners telah memantapkan diri sebagai praktik hukum terpercaya di Jakarta. Kami menggabungkan keahlian hukum yang mendalam dengan pendekatan yang berfokus pada klien, dipandu oleh tiga prinsip inti yang mendefinisikan semua yang kami lakukan.",
+    "servicesLabel": "Bidang Praktik",
+    "servicesTitle": "Layanan Hukum",
+    "servicesSubtitle": "Nasihat hukum strategis di tiga disiplin inti — dari ruang sidang hingga ruang direksi.",
+    "learnMore": "Pelajari Lebih Lanjut",
+    "insightsLabel": "Wawasan",
+    "articlesTitle": "Artikel Terbaru",
+    "viewAll": "Lihat Semua Artikel",
+    "ctaLabel": "Hubungi Kami",
+    "ctaTitle": "Siap Mendiskusikan Kebutuhan Hukum Anda?",
+    "ctaText": "Jadwalkan konsultasi dengan tim hukum berpengalaman kami. Kami di sini untuk membantu Anda menavigasi tantangan hukum Anda yang paling kompleks.",
+    "schedule": "Jadwalkan Konsultasi",
+    "orEmail": "atau email kami di",
+    "clientsLabel": "Klien Unggulan",
+    "clientsTitle": "Dipercaya oleh Pemimpin Industri"
+  },
+  "footer": {
+    "quickLinks": "Tautan Cepat",
+    "practiceAreas": "Bidang Praktik",
+    "contactUs": "Hubungi Kami",
+    "aboutUs": "Tentang Kami",
+    "legalServices": "Layanan Hukum",
+    "ourTeam": "Tim Kami",
+    "insights": "Wawasan",
+    "contact": "Kontak",
+    "disclaimer": "Situs web ini hanya untuk tujuan informasi dan bukan merupakan nasihat hukum atau membentuk hubungan klien-pengacara. Hasil masa lalu tidak menjamin hasil yang sama. STNP melepaskan tanggung jawab atas tindakan yang diambil berdasarkan konten situs ini.",
+    "disclaimerButton": "Sanggahan Hukum",
+    "disclaimerFull": {
+      "title": "Sanggahan Hukum",
+      "p1": "Materi yang disediakan di situs web ini telah disusun oleh Soaloan Tua Nababan & Partners (\"STNP\") hanya untuk tujuan informasi umum. Konten ini bukan merupakan nasihat hukum, dan Anda tidak boleh mengandalkannya sebagai nasihat hukum. Informasi yang disajikan di sini bukan merupakan pengganti konsultasi dengan pengacara yang berkualifikasi mengenai situasi hukum spesifik Anda. STNP secara tegas melepaskan semua tanggung jawab sehubungan dengan tindakan yang diambil atau tidak diambil berdasarkan salah satu atau seluruh isi situs web ini.",
+      "p2": "Mengakses, membaca, atau berinteraksi dengan informasi di situs web ini tidak membentuk hubungan pengacara-klien antara Anda dan Soaloan Tua Nababan & Partners. Hubungan semacam itu hanya dapat dibentuk melalui perjanjian tertulis resmi yang ditandatangani oleh firma kami. Jika Anda memerlukan nasihat hukum atau memiliki pertanyaan hukum tertentu, silakan berkonsultasi dengan salah satu pengacara kami atau mencari penasihat hukum dari profesional yang berkualifikasi di wilayah hukum Anda.",
+      "confidentialityTitle": "Pemberitahuan Kerahasiaan",
+      "confidentiality": "Jangan mengirimkan informasi rahasia kepada kami melalui situs web ini atau melalui email sampai Anda telah menjalin hubungan pengacara-klien resmi dengan firma kami.",
+      "p3": "Anda harus berasumsi bahwa STNP mungkin memiliki hubungan profesional dengan penyedia barang dan jasa yang disebutkan dalam situs web ini. STNP tidak serta merta mendukung, dan tidak bertanggung jawab atas, konten pihak ketiga mana pun yang mungkin diakses melalui situs web ini.",
+      "p4": "Penggunaan situs web ini dan informasi yang dikandungnya juga tunduk pada syarat dan ketentuan yang diuraikan dalam Kebijakan Privasi kami. Jika Anda memiliki pertanyaan mengenai ketentuan ini, silakan hubungi kami di admin@stnp.co.id.",
+      "closeButton": "Saya Mengerti"
+    }
+  }
+}

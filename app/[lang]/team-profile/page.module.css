@@ -1,0 +1,128 @@
+/* Shared inner hero */
+.pageHero {
+  position: relative;
+  padding: calc(var(--nav-height) + var(--space-3xl)) 0 var(--space-3xl);
+  background: var(--color-primary);
+  overflow: hidden;
+}
+.pageHero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 70% 30%, rgba(44, 95, 124, 0.2), transparent 60%),
+    radial-gradient(ellipse at 20% 80%, rgba(196, 163, 90, 0.08), transparent 50%);
+}
+.heroOverlay { position: absolute; inset: 0; }
+.heroContent { position: relative; z-index: 1; }
+.breadcrumb {
+  font-size: var(--text-xs);
+  color: var(--color-accent);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: var(--space-sm);
+}
+.heroTitle {
+  font-size: var(--text-h1);
+  color: var(--color-white);
+  margin-bottom: var(--space-sm);
+}
+.heroSubtitle {
+  font-size: var(--text-lg);
+  color: rgba(255, 255, 255, 0.6);
+  max-width: 550px;
+}
+
+/* Team Grid */
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-xl);
+}
+
+.associatesSection {
+  background-color: var(--color-bg-alt);
+}
+
+.teamCard {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: transform 200ms var(--ease-out), box-shadow 200ms var(--ease-out), border-color 200ms var(--ease-out);
+}
+
+.teamCard:active {
+  transform: scale(0.97);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .teamCard:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--color-accent);
+  }
+
+  .teamCard:hover .photo {
+    transform: scale(1.03);
+  }
+}
+
+.photoWrapper {
+  aspect-ratio: 3/4;
+  background: var(--color-bg-alt);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 400ms var(--ease-out);
+}
+
+.photoPlaceholder {
+  color: var(--color-text-light);
+}
+
+.cardBody {
+  padding: var(--space-lg);
+}
+
+.memberName {
+  font-size: 1.3rem;
+  color: var(--color-primary);
+  margin-bottom: 4px;
+}
+
+.memberTitle {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.memberBio {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  line-height: 1.7;
+  margin-top: var(--space-sm);
+  white-space: pre-line;
+}
+
+@media (max-width: 1024px) {
+  .teamGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .teamGrid {
+    grid-template-columns: 1fr;
+  }
+}

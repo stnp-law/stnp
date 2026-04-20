@@ -1,0 +1,57 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "team": "Team",
+    "insights": "Insights",
+    "contact": "Contact",
+    "consultation": "Consultation",
+    "freeConsultation": "Free Consultation"
+  },
+  "home": {
+    "heroLabel": "Soaloan Tua Nababan & Partners",
+    "heroTitle1": "Enforcing the Law",
+    "heroTitle2": "of Truth & Justice",
+    "heroSubtitle": "A full-service Jakarta law firm providing strategic legal counsel across bankruptcy, litigation, corporate, and finance.",
+    "aboutLabel": "About Our Firm",
+    "aboutTitle": "Trusted Legal Partners Since 2018",
+    "aboutText": "Founded by {founder}, Soaloan Tua Nababan & Partners has established itself as a trusted legal practice in Jakarta. We combine deep legal expertise with a client-focused approach, guided by three core principles that define everything we do.",
+    "servicesLabel": "Practice Areas",
+    "servicesTitle": "Legal Services",
+    "servicesSubtitle": "Strategic legal counsel across three core disciplines — from courtroom to boardroom.",
+    "learnMore": "Learn More",
+    "insightsLabel": "Insights",
+    "articlesTitle": "Latest Articles",
+    "viewAll": "View All Articles",
+    "ctaLabel": "Get in Touch",
+    "ctaTitle": "Ready to Discuss Your Legal Needs?",
+    "ctaText": "Schedule a consultation with our experienced legal team. We’re here to help navigate your most complex legal challenges.",
+    "schedule": "Schedule Consultation",
+    "orEmail": "or email us at",
+    "clientsLabel": "Featured Clients",
+    "clientsTitle": "Trusted by Industry Leaders"
+  },
+  "footer": {
+    "quickLinks": "Quick Links",
+    "practiceAreas": "Practice Areas",
+    "contactUs": "Contact Us",
+    "aboutUs": "About Us",
+    "legalServices": "Legal Services",
+    "ourTeam": "Our Team",
+    "insights": "Insights",
+    "contact": "Contact",
+    "disclaimer": "This website is for informational purposes only and does not constitute legal advice or establish an attorney-client relationship. Prior results do not guarantee similar outcomes. STNP disclaims all liability for actions taken based on this site's content.",
+    "disclaimerButton": "Legal Disclaimer",
+    "disclaimerFull": {
+      "title": "Legal Disclaimer",
+      "p1": "The materials provided on this website have been prepared by Soaloan Tua Nababan & Partners (\"STNP\") for general informational purposes only. This content does not constitute legal advice, and you should not rely on it as such. The information presented here is not a substitute for consulting with a qualified attorney regarding your specific legal situation. STNP expressly disclaims all liability with respect to actions taken or not taken based on any or all of the contents of this website.",
+      "p2": "Accessing, reading, or interacting with the information on this website does not establish an attorney-client relationship between you and Soaloan Tua Nababan & Partners. Such a relationship can only be formed through a formal, written agreement signed by our firm. If you require legal advice or have specific legal questions, please consult with one of our attorneys or seek legal counsel from a qualified professional in your jurisdiction.",
+      "confidentialityTitle": "Confidentiality Notice",
+      "confidentiality": "Do not send confidential information to us through this website or by email until you have established a formal attorney-client relationship with our firm.",
+      "p3": "You should assume that STNP may have professional relationships with providers of goods and services mentioned within this website. STNP does not necessarily endorse, and is not responsible for, any third-party content that may be accessed through this website.",
+      "p4": "The use of this website and the information it contains is also subject to the terms and conditions outlined in our Privacy Policy. If you have any questions regarding these terms, please contact us at admin@stnp.co.id.",
+      "closeButton": "I Understand"
+    }
+  }
+}

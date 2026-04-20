@@ -1,0 +1,209 @@
+/* Shared inner hero */
+.pageHero {
+  position: relative;
+  padding: calc(var(--nav-height) + var(--space-3xl)) 0 var(--space-3xl);
+  background: var(--color-primary);
+  overflow: hidden;
+}
+.pageHero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 70% 30%, rgba(44, 95, 124, 0.2), transparent 60%),
+    radial-gradient(ellipse at 20% 80%, rgba(196, 163, 90, 0.08), transparent 50%);
+}
+.heroOverlay { position: absolute; inset: 0; }
+.heroContent { position: relative; z-index: 1; }
+.breadcrumb {
+  font-size: var(--text-xs);
+  color: var(--color-accent);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: var(--space-sm);
+}
+.heroTitle { font-size: var(--text-h1); color: var(--color-white); margin-bottom: var(--space-sm); }
+.heroSubtitle { font-size: var(--text-lg); color: rgba(255, 255, 255, 0.6); max-width: 500px; }
+
+/* Contact Grid */
+.contactGrid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: var(--space-3xl);
+  align-items: start;
+}
+
+/* Form */
+.formWrapper {}
+
+.formHeading {
+  font-size: var(--text-h3);
+  margin-bottom: var(--space-xs);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  margin-top: var(--space-lg);
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-md);
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.label {
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.input,
+.textarea {
+  padding: 12px 16px;
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  color: var(--color-text);
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+  outline: none;
+}
+
+.input:focus,
+.textarea:focus {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px rgba(196, 163, 90, 0.1);
+}
+
+.input::placeholder,
+.textarea::placeholder {
+  color: var(--color-text-light);
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+
+.submitBtn {
+  align-self: flex-start;
+  min-width: 180px;
+}
+
+.submitBtn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none !important;
+}
+
+/* Status Messages */
+.successMsg {
+  display: flex;
+  gap: var(--space-sm);
+  align-items: flex-start;
+  padding: var(--space-md);
+  background: rgba(34, 197, 94, 0.08);
+  border: 1px solid rgba(34, 197, 94, 0.2);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-md);
+}
+
+.successMsg svg {
+  flex-shrink: 0;
+  color: #22c55e;
+}
+
+.successMsg p {
+  color: #166534;
+  font-size: var(--text-sm);
+  margin: 0;
+}
+
+.errorMsg {
+  padding: var(--space-md);
+  background: rgba(239, 68, 68, 0.08);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-md);
+}
+
+.errorMsg p {
+  color: #991b1b;
+  font-size: var(--text-sm);
+  margin: 0;
+}
+
+/* Info Sidebar */
+.infoSidebar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.infoCard {
+  padding: var(--space-lg);
+  background: var(--color-bg-alt);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border-light);
+}
+
+.infoTitle {
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-primary);
+  margin-bottom: var(--space-sm);
+  padding-bottom: var(--space-xs);
+  border-bottom: 2px solid var(--color-accent);
+  display: inline-block;
+}
+
+.infoAddress {
+  font-style: normal;
+  font-size: var(--text-body);
+  line-height: 1.7;
+  color: var(--color-text-muted);
+}
+
+.infoValue {
+  font-size: var(--text-body);
+  color: var(--color-text-muted);
+  margin: 2px 0;
+}
+
+.infoEmail {
+  font-size: var(--text-body);
+  color: var(--color-steel);
+  font-weight: 500;
+  transition: color var(--transition-fast);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .infoEmail:hover {
+    color: var(--color-accent);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contactGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .formRow {
+    grid-template-columns: 1fr;
+  }
+}

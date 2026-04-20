@@ -1,0 +1,71 @@
+.toggleSpacer {
+  width: 38px;
+  height: 38px;
+}
+
+.toggleButton {
+  position: relative;
+  width: 38px;
+  height: 38px;
+  border-radius: var(--radius-full, 9999px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: inherit; /* Inherit color from parent (Navbar) to maintain contrast */
+  overflow: hidden;
+  transition: transform 160ms cubic-bezier(0.23, 1, 0.32, 1), background-color 200ms ease;
+}
+
+/* Ensure icons use the button's color explicitly */
+.sunIcon,
+.moonIcon {
+  fill: currentColor;
+  color: inherit;
+}
+
+.toggleButton:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.toggleButton:active {
+  transform: scale(0.92); /* Strong tactile feedback on click */
+}
+
+.iconContainer {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sunIcon,
+.moonIcon {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  transition: transform 300ms cubic-bezier(0.32, 0.72, 0, 1), opacity 300ms cubic-bezier(0.32, 0.72, 0, 1);
+  transform-origin: center;
+}
+
+/* Light Mode: Sun visible, Moon rotated & faded away */
+.isLight .sunIcon {
+  transform: rotate(0deg) scale(1);
+  opacity: 1;
+}
+.isLight .moonIcon {
+  transform: rotate(90deg) scale(0);
+  opacity: 0;
+}
+
+/* Dark Mode: Moon visible, Sun rotated & faded away */
+.isDark .sunIcon {
+  transform: rotate(-90deg) scale(0);
+  opacity: 0;
+}
+.isDark .moonIcon {
+  transform: rotate(0deg) scale(1);
+  opacity: 1;
+}

@@ -1,0 +1,14 @@
+/* ScrollStack specific required CSS */
+.scroll-stack-card {
+  position: relative;
+  z-index: 1;
+}
+
+.scroll-stack-inner {
+  position: relative;
+}
+
+.scroll-stack-end {
+  height: 50vh; /* Allow some scroll space to release last item */
+  pointer-events: none;
+}

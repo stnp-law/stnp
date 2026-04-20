@@ -1,0 +1,78 @@
+.heroScrollBtn {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  background: rgba(10, 22, 40, 0.4);
+  border: 1px solid rgba(196, 163, 90, 0.3);
+  border-radius: 40px;
+  padding: 12px 16px;
+  color: var(--color-accent);
+  backdrop-filter: blur(4px);
+  cursor: pointer;
+  transition: transform 160ms cubic-bezier(0.23, 1, 0.32, 1), background-color 200ms ease, border-color 200ms ease;
+  
+  /* Staggered entrance animation for exactly this component assuming it's the last element */
+  opacity: 0;
+  animation: heroFadeIn 600ms cubic-bezier(0.23, 1, 0.32, 1) both;
+  animation-delay: 250ms;
+}
+
+.heroScrollBtn:active {
+  transform: translateX(-50%) scale(0.95);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .heroScrollBtn:hover {
+    background: rgba(10, 22, 40, 0.6);
+    border-color: rgba(196, 163, 90, 0.6);
+  }
+}
+
+.scrollText {
+  font-family: var(--font-body);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 500;
+}
+
+.scrollChevron {
+  animation: bounce 2s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(4px);
+  }
+  60% {
+    transform: translateY(2px);
+  }
+}
+
+@keyframes heroFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(20px) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0) scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .heroScrollBtn, .scrollChevron {
+    animation: none;
+    transform: translateX(-50%);
+    opacity: 1;
+  }
+}

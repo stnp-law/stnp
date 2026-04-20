@@ -1,0 +1,200 @@
+/* Shared hero — same pattern as about-us */
+.pageHero {
+  position: relative;
+  padding: calc(var(--nav-height) + var(--space-3xl)) 0 var(--space-3xl);
+  background: var(--color-primary);
+  overflow: hidden;
+}
+
+.pageHero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 70% 30%, rgba(44, 95, 124, 0.2), transparent 60%),
+    radial-gradient(ellipse at 20% 80%, rgba(196, 163, 90, 0.08), transparent 50%);
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="g" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M0 10L10 0" stroke="rgba(196,163,90,0.04)" stroke-width="0.5"/></pattern></defs><rect fill="url(%23g)" width="100" height="100"/></svg>');
+}
+
+.heroContent { position: relative; z-index: 1; }
+
+.breadcrumb {
+  font-size: var(--text-xs);
+  color: var(--color-accent);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: var(--space-sm);
+}
+
+.heroTitle {
+  font-size: var(--text-h1);
+  color: var(--color-white);
+  margin-bottom: var(--space-sm);
+}
+
+.heroSubtitle {
+  font-size: var(--text-lg);
+  color: rgba(255, 255, 255, 0.6);
+  max-width: 600px;
+}
+
+/* ===== CATEGORIES ===== */
+.categorySection {
+  margin-bottom: var(--space-3xl);
+}
+
+.categoryHeader {
+  text-align: center;
+  margin-bottom: var(--space-2xl);
+}
+
+.categoryTitle {
+  font-size: var(--text-h2);
+  color: var(--color-primary);
+  margin-bottom: var(--space-xs);
+}
+
+.proBonoSection .serviceRow {
+  background: var(--color-bg-alt);
+  border-color: var(--color-accent-light);
+}
+
+/* ===== SERVICES LIST ===== */
+.servicesList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3xl);
+}
+
+.serviceRow {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: var(--space-2xl);
+  align-items: center;
+  padding: var(--space-2xl);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border-light);
+  transition: transform 200ms var(--ease-out), border-color 200ms var(--ease-out), box-shadow 200ms var(--ease-out), background-color 200ms var(--ease-out);
+}
+
+.serviceRow:active {
+  transform: scale(0.99);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .serviceRow:hover {
+    border-color: var(--color-accent);
+    box-shadow: var(--shadow-lg);
+  }
+}
+
+.serviceRowReversed {
+  grid-template-columns: 1fr 280px;
+}
+
+.serviceRowReversed .serviceIconBlock {
+  order: 2;
+}
+
+.serviceIconBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.serviceIconLarge {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(196, 163, 90, 0.06);
+  border: 1px solid rgba(196, 163, 90, 0.15);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  color: var(--color-accent);
+  transition: transform 200ms var(--ease-out), background-color 200ms var(--ease-out), border-color 200ms var(--ease-out);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .serviceRow:hover .serviceIconLarge {
+    background: rgba(196, 163, 90, 0.12);
+    border-color: rgba(196, 163, 90, 0.3);
+    transform: scale(1.05);
+  }
+}
+
+.serviceIconLarge svg {
+  width: 100%;
+  height: 100%;
+}
+
+.serviceNumber {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  opacity: 0.4;
+}
+
+.serviceTitle {
+  font-size: var(--text-h3);
+  color: var(--color-primary);
+  margin-bottom: var(--space-xs);
+}
+
+.serviceDesc {
+  font-size: var(--text-lg);
+  line-height: 1.8;
+  color: var(--color-text-muted);
+  margin-top: var(--space-md);
+}
+
+.serviceCta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: var(--space-lg);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: gap var(--transition-fast);
+}
+
+.serviceCta:active {
+  transform: scale(0.97);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .serviceCta:hover {
+    gap: 12px;
+  }
+}
+
+/* CTA Section */
+.ctaSection {
+  padding: var(--space-3xl) 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .serviceRow,
+  .serviceRowReversed {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .serviceRowReversed .serviceIconBlock {
+    order: 0;
+  }
+}
