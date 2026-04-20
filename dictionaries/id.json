@@ -30,7 +30,9 @@
     "schedule": "Jadwalkan Konsultasi",
     "orEmail": "atau email kami di",
     "clientsLabel": "Klien Unggulan",
-    "clientsTitle": "Dipercaya oleh Pemimpin Industri"
+    "clientsTitle": "Dipercaya oleh Pemimpin Industri",
+    "heroCtaPrimary": "Jadwalkan Konsultasi",
+    "heroCtaSecondary": "Bidang Praktik Kami"
   },
   "footer": {
     "quickLinks": "Tautan Cepat",

@@ -30,7 +30,9 @@
     "schedule": "Schedule Consultation",
     "orEmail": "or email us at",
     "clientsLabel": "Featured Clients",
-    "clientsTitle": "Trusted by Industry Leaders"
+    "clientsTitle": "Trusted by Industry Leaders",
+    "heroCtaPrimary": "Schedule Consultation",
+    "heroCtaSecondary": "Our Practice Areas"
   },
   "footer": {
     "quickLinks": "Quick Links",
